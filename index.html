@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Admin Dashboard</title>
+    </head>
+    <body>
+        <div class="dashboard">
+            <aside>
+                <div class="sidebar-logo">
+                    <div class="logo">
+                        <img src="images/view-dashboard.svg" alt="" />
+                    </div>
+                    <p>Dashboard</p>
+                </div>
+                <ul class="sidebar-nav">
+                    <a href="#" class="nav-link active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Profile</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Messages</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>History</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>Tasks</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Communities</span>
+                    </a>
+                </ul>
+                <ul class="sidebar-nav">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Settings</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>Support</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Privacy</span>
+                    </a>
+                </ul>
+            </aside>
+            <header>
+                <div class="header-top">
+                    <div class="header-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" />
+                    </div>
+                    <div class="header-user">
+                        <i class="fa-regular fa-bell"></i>
+                        <div class="user-avatar">
+                            <img src="images/avatar.png" alt="" />
+                        </div>
+                        <p class="user-name">Morgan Oakley</p>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-greeting">
+                        <div class="user-avatar">
+                            <img src="images/avatar.png" alt="" />
+                        </div>
+                        <div class="header-text">
+                            <p>Hi there,</p>
+                            <h1>Morgan Oakley (@morgan)</h1>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="projects">
+                    <h2>Your Projects</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h3>Super Cool Project</h3>
+                            <p>
+                                Sed tempus ut lacus ut scelerisque. Suspendisse
+                                sollicitudin nibh erat, id facilisis felis
+                                accumsan nec.
+                            </p>
+                            <div class="project-action">
+                                <a href="#"
+                                    ><i class="fa-regular fa-star"></i
+                                ></a>
+                                <a href="#"
+                                    ><i class="fa-regular fa-eye"></i
+                                ></a>
+                                <a href="#"
+                                    ><i class="fa-solid fa-code-fork"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

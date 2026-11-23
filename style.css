@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1992d4;
+    --secondary-color: #f0b429;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dashboard {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "sidebar header" "sidebar main";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+}
+
+.sidebar-logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-logo p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sidebar-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px;
+    height: 35px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+    color: #d6eaf5;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #126b9b;
+    color: #fff;
+}
+
+header {
+    grid-area: header;
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-search i {
+    font-size: 14px;
+}
+
+.header-search input {
+    width: 450px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    background-color: #e2e8f0;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.header-search input:focus {
+    border-color: #64748b;
+}
+
+.header-user {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header-user img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.header-user .user-name {
+    font-weight: 600;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-greeting {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-greeting img {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.header-text p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header-text h1 {
+    font-size: 22px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.header-actions button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.header-actions button:hover {
+    background-color: #126b9b;
+}
